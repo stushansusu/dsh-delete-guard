@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Delete Guard",
+    "description": "Stops bulk deletion once the cumulative deleted size passes the 300 MB threshold and asks the user to approve continuing."
+  }
+}

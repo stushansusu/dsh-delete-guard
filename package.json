@@ -1,0 +1,46 @@
+{
+  "name": "dsh-delete-guard",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "DSH plugin: measure AI deletions per session, terminate the call once the cumulative size passes a threshold, then ask the user with the list of files already removed.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "safety",
+    "delete-guard"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stushansusu/dsh-delete-guard.git"
+  },
+  "homepage": "https://github.com/stushansusu/dsh-delete-guard#readme",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

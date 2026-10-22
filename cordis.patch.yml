@@ -1,0 +1,14 @@
+# Bundle patch: inserts the delete-guard row. Everything here is a default —
+# override any field from the profile's own cordis.patch.yml by row id.
+- insert:
+    - id: delete-guard
+      name: 'dsh-delete-guard'
+      config:
+        enabled: true
+        limitBytes: 314572800
+        limitFiles: 0
+        tools:
+          - pwsh
+          - bash
+        askTimeoutSeconds: 180
+        reportTopFiles: 30
